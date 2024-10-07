@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit Upvoter",
+  "version": "1.0",
+  "description": "A Chrome extension to upvote all comments and replies on Reddit posts.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.reddit.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "favicon.ico",
+      "48": "logo192.png",
+      "128": "logo512.png"
+    }
+  },
+  "icons": {
+    "16": "favicon.ico",
+    "48": "logo192.png",
+    "128": "logo512.png"
+  }
+}
